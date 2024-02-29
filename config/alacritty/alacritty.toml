@@ -1,0 +1,25 @@
+import = ["/home/alex/.config/alacritty/colors.toml"]
+
+[cursor]
+blink_interval = 750
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[font]
+size = 7.2
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 7
+y = 7
