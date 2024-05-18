@@ -6,7 +6,7 @@
 3. `archinstall` ausfuehren
     - `ext4`
     - `home`
-    - `swap`
+    - `no swap`
     - `Gnome desktop`
     - `linux-zen`
     - `PulseAudio`
