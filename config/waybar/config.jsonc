@@ -7,38 +7,16 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        // logo
-        // workspaces
-        // aktive app
+        "custom/media",
         "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
-        "custom/media"
-    ],
-    "modules-center": [
         "land/window"
     ],
+    "modules-center": [],
     "modules-right": [
-        // lautstärke
-        // mic (muted/unmuted)
-        // akku
-        // internet (nur das symbol + (bei click ein popup?))
-        // Datum (Mon Jun 5  9:41 AM)
-        "mpd",
-        "idle_inhibitor",
         "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "hyprland/language",
         "battery",
-        "battery#bat2",
-        "clock",
-        "tray"
+        "network",
+        "clock"     // Datum (Mon Jun 5  9:41 AM)
     ],
     // Modules configuration
     // "hyprland/workspaces": {
@@ -208,3 +186,30 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
+
+// {
+//     "moddules": [
+//         "hyprland/workspaces",
+//         "hyprland/mode",
+//         "hyprland/scratchpad",
+//         "custom/media"
+
+//         "land/window"
+
+//         "mpd",
+//         "idle_inhibitor",
+//         "pulseaudio",
+//         "network",
+//         "power-profiles-daemon",
+//         "cpu",
+//         "memory",
+//         "temperature",
+//         "backlight",
+//         "keyboard-state",
+//         "hyprland/language",
+//         "battery",
+//         "battery#bat2",
+//         "clock",
+//         "tray"
+//     ]
+// }
