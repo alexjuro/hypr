@@ -26,7 +26,7 @@
 6. `eval "$(starship init bash)"` am ende einfuegen
 7. ausloggen und in hyprland einloggen
 8. in code menu bar ausblenden mit `View -> Appearance -> Menu Bar`
-9. github dark theme installieren
+9. github material theme darker und material icon theme installieren
 
 ---
 ## nuetzliche Befehle
