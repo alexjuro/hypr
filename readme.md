@@ -20,8 +20,8 @@
 ## Dotfiles anwenden
 1. Projekt mit git clonen
 2. in den Ordner wechseln
-3. `chrmod u+x ./install.sh` ausfuehren
-4. `./install.sh` ausfuehren
+3. `chmod u+x ./install.sh` ausführen
+4. `./install.sh` ausführen
 5. execute `vim ~/.bashrc`
 6. `eval "$(starship init bash)"` am ende einfuegen
 7. ausloggen und in hyprland einloggen
@@ -30,3 +30,14 @@
 
 ---
 ## nuetzliche Befehle
+
+
+---
+## VS Code
+- Material Theme Icons: `https://open-vsx.org/vscode/item?itemName=Equinusocio.vsc-material-theme-icons`
+- Material Theme: `https://open-vsx.org/vscode/item?itemName=Equinusocio.vsc-material-theme` -> Material Theme Darker High Contrast
+- GitLens: `https://open-vsx.org/vscode/item?itemName=eamodio.gitlens`
+
+---
+## chrome
+- set the appearence to `https://chromewebstore.google.com/detail/aura-theme/ddipnaombfnagpagnpdkdinoekfhfjoh?hl=en`
