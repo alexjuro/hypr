@@ -1,4 +1,4 @@
-import = ["/home/alex/.config/alacritty/colors.toml"]
+general.import = ["/home/alex/.config/alacritty/colors.toml"]
 
 [cursor]
 blink_interval = 750
