@@ -13,7 +13,7 @@
     ],
     "modules-center": [],
     "modules-right": [
-        //custom/updates
+        "custom/updates",
         "pulseaudio",
         "battery",
         "network",
@@ -179,7 +179,18 @@
 
 
     "custom/icon": {
-        "format": ""
+        "format": ""
+    },
+
+    "custom/updates": {
+        "format": "{}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/.config/waybar/updates.sh",
+        "restart-interval": 60,
+        "on-click": "alacritty -e ~/.config/waybar/installUpdates.sh",
+        "tooltip": false
     }
 
     // "custom/media": {
