@@ -9,8 +9,7 @@
 
     "modules-left": [
         "custom/icon",
-        "hyprland/workspaces",
-        "land/window"
+        "hyprland/workspaces"
     ],
     "modules-center": [],
     "modules-right": [
@@ -22,12 +21,6 @@
         "wlr/taskbar",
         "clock"
     ],
-
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-        "tooltip": false
-    },
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -72,16 +65,13 @@
         "tooltip": false
     },
 
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
-
     "network": {
         "format-wifi": "",
         "format-ethernet": "",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠",
-        "format-alt": "{essid} - {ipaddr}/{cidr}"
+        "format-alt": "{essid} - {ipaddr}/{cidr}",
+        "tooltip": false
     },
 
     "pulseaudio": {
