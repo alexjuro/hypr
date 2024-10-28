@@ -2,7 +2,7 @@
 updates=$(pacman -Qu | wc -l)
 
 if [ "$updates" -gt 3 ]; then
-    printf '{"text": "%s "}' "$updates"
+    printf '{"text": ""}'
 else
-    printf '{"text": "0 "}'
+    printf '{"text": ""}'
 fi
