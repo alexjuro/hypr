@@ -1,11 +1,12 @@
-/* schwarzer Background, weißer Text */
-
 * {
-    /* otf-font-awesome` is required to be installed for icons */
-    /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
-    font-family: FontAwesome, Roboto;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
 window#waybar {
@@ -27,52 +28,63 @@ window#waybar.chromium {
     border: none;
 }
 
-#custom-updates {
-    padding-right: 7px;
-    background-color: rgba(100, 100, 300, 0.7);
-}
-
-#memory{
-    background-color: rgba(100, 100, 300, 0.7);
-}
-
 #custom-icon,
+#custom-updates,
 #pulseaudio,
 #battery,
+#custom-disk,
+#custom-cpu,
+#custom-memory,
+#network {
+    font-family: 'Symbols Nerd Font Mono';
+    font-size: 20px;
+}
+
+#workspaces,
+#custom-volume,
+#custom-battery,
 #disk,
 #cpu,
-#network {
-    padding-right: 9px;
-    background-color: rgba(100, 100, 100, 0.2);
+#memory,
+#clock {
+    font-family: 'JetBrains Mono Nerd Font Mono';
 }
 
 /* ----------------------------------------------------------- */
 /* magrin & spaces */
 /* ----------------------------------------------------------- */
 
-#custom-icon {
-    margin-left: 12px;
+/* #custom-icon {
+    margin-left: 15px;
 }
 
-/* space between the widget */
 #custom-icon,
 #custom-updates,
 #pulseaudio,
 #battery,
-#memory,
+#custom-memory,
 #network,
-#wlr-taskbar {
-    margin-right: 12px;
+#wlr-taskbar,
+#clock {
+    margin-right: 15px;
 }
 
-#clock {
-    margin-right: 12px;
+#disk,
+#cpu,
+#memory {
+    margin-right: 3px;
+}
+
+#custom-disk,
+#custom-cpu{
+    margin-right: 6px;
 }
 
 #workspaces button {
     margin-right: 12px;
     background-color: transparent;
     color: #ffffff;
+    padding: 3px 0px 0px 0px;
 }
 
 #workspaces button:hover{
@@ -82,12 +94,26 @@ window#waybar.chromium {
 #workspaces button.focused {
     background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
-}
+} */
 
 
 /* ----------------------------------------------------------- */
 /* widget specific settings -> ordered from left to right*/
 /* ----------------------------------------------------------- */
 
+/* #custom-icon,
+#custom-updates,
+#battery,
+#custom-disk,
+#custom-cpu,
+#custom-memory,
+#network {
+    font-size: 20px;
+}
 
-
+#disk,
+#cpu,
+#memory,
+#clock {
+    padding-top: 5px;
+} */
