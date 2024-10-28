@@ -7,3 +7,5 @@ cp -r ./config/* ~/.config
 chmod +x ./update.sh
 chmod +x ~/.config/waybar/updates.sh
 chmod +x ~/.config/waybar/installUpdates.sh
+chmod +x ~/.config/waybar/battery.sh
+chmod +x ~/.config/waybar/volume.sh

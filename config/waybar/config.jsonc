@@ -14,7 +14,9 @@
     "modules-center": [],
     "modules-right": [
         "custom/updates",
+        "custom/volume",
         "pulseaudio",
+        "custom/battery",
         "battery",
         "group/hardware",
         "network",
@@ -64,6 +66,16 @@
         ]
     },
 
+    "custom/battery": {
+        "format": "{}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/.config/waybar/battery.sh",
+        "restart-interval": 60,
+        "tooltip": false
+    },
+
     "battery": {
         "states": {
             // "good": 95,
@@ -74,7 +86,7 @@
         "format-full": "{icon}",
         "format-charging": "",
         "format-plugged": "",
-        // "format-alt": "{capacity}% {icon}",
+        "format-alt": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
@@ -88,10 +100,20 @@
         "tooltip": false
     },
 
+    "custom/volume": {
+        "format": "{}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/.config/waybar/volume.sh",
+        "restart-interval": 60,
+        "tooltip": false
+    },
+
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
         "format-bluetooth-muted": " {icon}",
         "format-muted": " ",
         "format-icons": {
