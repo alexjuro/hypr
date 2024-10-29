@@ -1,7 +1,5 @@
 * {
-    font-weight: 500;
-    font-size: 10px;
-    margin: 0px;
+    margin: 1.5px 0px;
     padding: 0px;
     border: none;
     border-radius: 0;
@@ -10,7 +8,7 @@
 }
 
 window#waybar {
-    background-color:#000000;
+    background-color: rgba(0, 0, 0, 0.8); /* Weiß mit 80% Opazität */
     color: #ffffff;
     transition-duration: .5s;
 }
@@ -28,6 +26,11 @@ window#waybar.chromium {
     border: none;
 }
 
+
+/* ----------------------------------------------------------- */
+/* default font-size and font-family settings*/
+/* ----------------------------------------------------------- */
+
 #custom-icon,
 #custom-updates,
 #pulseaudio,
@@ -35,9 +38,10 @@ window#waybar.chromium {
 #custom-disk,
 #custom-cpu,
 #custom-memory,
-#network {
+#network{
     font-family: 'Symbols Nerd Font Mono';
-    font-size: 20px;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 #workspaces,
@@ -46,74 +50,52 @@ window#waybar.chromium {
 #disk,
 #cpu,
 #memory,
-#clock {
+#clock,
+#workspaces button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
     font-family: 'JetBrains Mono Nerd Font Mono';
 }
+
 
 /* ----------------------------------------------------------- */
 /* magrin & spaces */
 /* ----------------------------------------------------------- */
 
-/* #custom-icon {
-    margin-left: 15px;
+#custom-icon {
+    margin: 0px 15px 0px 15px 
 }
 
-#custom-icon,
-#custom-updates,
-#pulseaudio,
-#battery,
-#custom-memory,
-#network,
-#wlr-taskbar,
-#clock {
-    margin-right: 15px;
+#workspaces button{
+    margin-right: 7.5px;
 }
 
+#custom-volume,
+#custom-battery,
 #disk,
 #cpu,
 #memory {
-    margin-right: 3px;
+    margin-right: 5px;
+}
+
+#pulseaudio,
+#battery,
+#custom-memory,
+#network {
+    margin-right: 15px;
 }
 
 #custom-disk,
-#custom-cpu{
-    margin-right: 6px;
+#custom-cpu {
+    margin-right: 7.5px;
 }
 
-#workspaces button {
-    margin-right: 12px;
-    background-color: transparent;
-    color: #ffffff;
-    padding: 3px 0px 0px 0px;
+#clock {
+    margin-right: 15px;
 }
-
-#workspaces button:hover{
-    background: rgba(0, 0, 0, 0);
-}
-
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-} */
 
 
 /* ----------------------------------------------------------- */
 /* widget specific settings -> ordered from left to right*/
 /* ----------------------------------------------------------- */
-
-/* #custom-icon,
-#custom-updates,
-#battery,
-#custom-disk,
-#custom-cpu,
-#custom-memory,
-#network {
-    font-size: 20px;
-}
-
-#disk,
-#cpu,
-#memory,
-#clock {
-    padding-top: 5px;
-} */
