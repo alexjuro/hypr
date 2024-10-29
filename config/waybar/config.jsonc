@@ -84,8 +84,8 @@
         },
         "format": "{icon}",
         "format-full": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
+        "format-charging": "󱐥",
+        "format-plugged": "󱄇",
         "format-alt": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
