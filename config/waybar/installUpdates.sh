@@ -1,3 +1,3 @@
 #/bin/sh
 printf 'performing system update \n'
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm

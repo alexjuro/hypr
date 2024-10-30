@@ -79,6 +79,7 @@ window#waybar.chromium {
     margin-right: 5px;
 }
 
+#custom-updates,
 #pulseaudio,
 #battery,
 #custom-memory,
