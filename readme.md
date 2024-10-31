@@ -29,7 +29,29 @@
 9. github material theme darker und material icon theme installieren
 
 ---
-## nuetzliche Befehle
+# Fixes
+## Audio spielt nicht:
+- `sudo pacman -Syu` : Update the system to make sure there is no partial upgrade or something else that might have gone wrong.
+
+- `sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber` : Any errors / warnings or does it go through cleanly?
+
+Then, clear wireplumber cache: `rm ~/.local/state/wireplumber/*` : This solved such issues in the past.
+
+Restart.
+
+Then, if it still happens:
+
+- `systemctl --user restart pipewire wireplumber`
+
+Restart the browser and try again.
+
+Afterwards, we can check more about your sound cards, check the journal, and see if there is anything that can be done.
+
+i installed the rest of the gstreamer plugins
+
+Why? I think only gstreamer is required, and it and any of the plugins will be pulled as dependencies. No need to install explicitly. So remove those with pacman -Rns.
+
+Did you do anything else that might be related to audio? Any packages / outside things installed, or any configuration? We should know about those in case they might be interfering.
 
 
 ---
