@@ -50,12 +50,34 @@ window#waybar.chromium {
 #disk,
 #cpu,
 #memory,
-#clock,
-#workspaces button {
-    font-size: 12px;
-    font-weight: 600;
+#clock {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'SF Pro';
     color: #ffffff;
-    font-family: 'JetBrains Mono Nerd Font Mono';
+}
+
+#workspaces button {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'SF Pro';
+    color: rgba(255, 255, 255, 1);
+}
+
+#workspaces button:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: none;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'SF Pro';
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    font-weight: 700;
 }
 
 
