@@ -135,7 +135,7 @@
         "escape": true,
         "return-type": "json",
         "exec": "~/.config/waybar/weather.sh",
-        "restart-interval": 500,
+        "restart-interval": 120,
         "tooltip": false
     },
 
