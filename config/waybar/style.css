@@ -86,7 +86,7 @@ window#waybar.chromium {
 /* ----------------------------------------------------------- */
 
 #custom-icon {
-    margin: 0px 15px 0px 15px 
+    margin: 0px 17px 0px 17px 
 }
 
 #workspaces button{
@@ -106,7 +106,7 @@ window#waybar.chromium {
 #battery,
 #custom-memory,
 #network {
-    margin-right: 15px;
+    margin-right: 17px;
 }
 
 #custom-disk,
@@ -115,7 +115,7 @@ window#waybar.chromium {
 }
 
 #clock {
-    margin-right: 15px;
+    margin-right: 17px;
 }
 
 
