@@ -33,9 +33,8 @@
         "tooltip": false
     },
 
-    //not replacec
     "custom/disk": {
-        "format": ""
+        "format": "􀤂"
     },
 
     "cpu": {
@@ -53,7 +52,7 @@
 
     //not replacec
     "custom/memory": {
-        "format": ""
+        "format": "􀫦"
     },
 
     "group/hardware": {
@@ -78,7 +77,6 @@
         "tooltip": false
     },
 
-    //not replaced 􀺶  􀺸  􁌫  
     "battery": {
         "states": {
             // "good": 95,
@@ -87,19 +85,18 @@
         },
         "format": "{icon}",
         "format-full": "{icon}",
-        "format-charging": "󱐥",
-        "format-plugged": "󱄇",
+        "format-charging": "􀢋",
+        "format-plugged": "􁌫",
         "format-alt": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": ["􀛪", "􀛩", "􀺶", "􀺸", "􀛨"],
         "tooltip": false
     },
 
-    //not replacec
     "network": {
-        "format-wifi": "",
-        "format-ethernet": "",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "⚠",
+        "format-wifi": "􀙇",
+        "format-ethernet": "􁍊",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "􀙈",
         // "format-alt": "{essid} - {ipaddr}/{cidr}",
         "tooltip": false
     },
@@ -114,37 +111,34 @@
         "tooltip": false
     },
 
-    //not replacec
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon}",
-        "format-bluetooth": "{icon}",
-        "format-bluetooth-muted": " {icon}",
-        "format-muted": "",
+        "format-bluetooth": "{icon}",
+        "format-bluetooth-muted": "􀊣",
+        "format-muted": "􀊣",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "􀑈",
+            "hands-free": "",
+            "headset": "􀑈",
+            "phone": "􁟜",
+            "portable": "",
+            "car": "􁠁",
+            "default": ["􀊡", "􀊥", "􀊧", "􀊩"]
         },
         "tooltip": false
     },
 
-    //not replacec
     "custom/icon": {
         "format": "{}",
-	"tooltip-format": "{}",
-	"escape": true,
-	"return-type": "json",
-	"exec": "~/.config/waybar/weather.sh",
-	"restart-interval": 500,
-	"tooltip": false
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/.config/waybar/weather.sh",
+        "restart-interval": 500,
+        "tooltip": false
     },
 
-    //not replacec
     "custom/updates": {
         "format": "{}",
         "tooltip-format": "{}",

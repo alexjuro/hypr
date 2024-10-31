@@ -1,5 +1,5 @@
 * {
-    margin: 1.5px 0px;
+    margin: 1.9px 0px;
     padding: 0px;
     border: none;
     border-radius: 0;
@@ -52,14 +52,14 @@ window#waybar.chromium {
 #memory,
 #clock {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'SF Pro';
     color: #ffffff;
 }
 
 #workspaces button {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'SF Pro';
     color: rgba(255, 255, 255, 1);
 }
