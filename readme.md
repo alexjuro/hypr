@@ -28,6 +28,11 @@
 8. in code menu bar ausblenden mit `View -> Appearance -> Menu Bar`
 9. github material theme darker und material icon theme installieren
 
+
+---
+# Nützliche Befehle:
+- `nmcli device wifi connect s_s_i_d -a`
+
 ---
 # Fixes
 ## Audio spielt nicht:
