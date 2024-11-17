@@ -1,7 +1,7 @@
 #!/bin/sh
-updates=$(pacman -Qu | wc -l)
+updates=$(grep "upgraded" /var/log/pacman.log | wc -l)
 
-if [ "$updates" -gt 3 ]; then
+if [ "$updates" -gt 10 ]; then
     printf '{"text": "􁓹"}'
 else
     printf '{"text": ""}'
