@@ -1,5 +1,5 @@
 #!/bin/sh
-updates=$(grep "upgraded" /var/log/pacman.log | wc -l)
+updates=$(pacman -Qu | wc -l)
 
 if [ "$updates" -gt 10 ]; then
     printf '{"text": "􁓹"}'
