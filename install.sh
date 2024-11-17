@@ -1,7 +1,7 @@
 #/bin/sh
 
 sudo pacman -Syu
-sudo pacman -Sy hyprland hyprpaper wofi nautilus alacritty waybar code chromium nerd-fonts starship p7zip jq neofetch pipewire pipewire-pulse pipewire-alsa wireplumber --noconfirm
+sudo pacman -Sy hyprland hyprpaper wofi nautilus alacritty waybar code chromium nerd-fonts starship p7zip jq neofetch pipewire pipewire-pulse pipewire-alsa wireplumber dolphin-emu --noconfirm
 
 cp -r ./config/* ~/.config
 chmod +x ./update.sh
