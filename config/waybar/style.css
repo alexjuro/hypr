@@ -51,7 +51,7 @@ window#waybar.chromium {
 #cpu,
 #memory,
 #clock {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     font-family: 'SF Pro';
     color: #ffffff;
