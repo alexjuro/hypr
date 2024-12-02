@@ -48,7 +48,7 @@ case "$main" in
 				printf '{"text": "􀇛"}'
 			fi
 		elif [ "$description" = "scattered clouds" ]; then
-            printf '{"text": ""􀇃}'
+            printf '{"text": "􀇃"}'
 		else
             printf '{"text": "􀇣"}'
         fi
