@@ -1,151 +1,152 @@
 // -*- mode: jsonc -*-
 {
+  // "height": 1, // Waybar height (to be removed for auto height)
+  // "spacing": 4, // Gaps between modules (4px)
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  // "width": 1280, // Waybar width
 
-    // "height": 1, // Waybar height (to be removed for auto height)
-    // "spacing": 4, // Gaps between modules (4px)
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "width": 1280, // Waybar width
+  "modules-left": ["custom/icon", "hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": [
+    "custom/updates",
+    "custom/volume",
+    "pulseaudio",
+    "custom/battery",
+    "battery",
+    "group/hardware",
+    "network",
+    "clock"
+  ],
 
-    "modules-left": [
-        "custom/icon",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [],
-    "modules-right": [
-        "custom/updates",
-        "custom/volume",
-        "pulseaudio",
-        "custom/battery",
-        "battery",
-        "group/hardware",
-        "network",
-        "clock"
-    ],
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%a %b %d  %I:%M %p}",
+    "tooltip": false
+    // "format-alt": "{:%a %b %d  %r %p}"
+  },
 
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a %b %d  %I:%M %p}"
+  "disk": {
+    "format": "{}%",
+    "tooltip": false
+  },
+
+  "custom/disk": {
+    "format": "􀤂",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": "{usage}%",
+    "tooltip": false
+  },
+
+  "custom/cpu": {
+    "format": "􀫴",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "{}%",
+    "tooltip": false
+  },
+
+  "custom/memory": {
+    "format": "􀫦",
+    "tooltip": false
+  },
+
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "disk",
+      "custom/disk",
+      "cpu",
+      "custom/cpu",
+      "memory",
+      "custom/memory"
+    ]
+  },
+
+  "custom/battery": {
+    "format": "{}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/battery.sh",
+    "restart-interval": 60,
+    "tooltip": false
+  },
+
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
     },
+    "format": "{icon}",
+    "format-full": "{icon}",
+    "format-charging": "􀢋",
+    "format-plugged": "􁌫",
+    "format-icons": ["􀛪", "􀛩", "􀺶", "􀺸", "􀛨"],
+    "tooltip": false
+  },
 
-    "disk": {
-        "format": "{}%",
-        "tooltip": false
+  "network": {
+    "format-wifi": "􀙇",
+    "format-ethernet": "􁍊",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "􀙈",
+    // "format-alt": "{essid} - {ipaddr}/{cidr}",
+    "tooltip": false
+  },
+
+  "custom/volume": {
+    "format": "{}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/volume.sh",
+    "restart-interval": 60,
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "format-bluetooth-muted": "􀊣",
+    "format-muted": "􀊣",
+    "format-icons": {
+      "headphone": "􀑈",
+      "hands-free": "",
+      "headset": "􀑈",
+      "phone": "􁟜",
+      "portable": "",
+      "car": "􁠁",
+      "default": ["􀊡", "􀊥", "􀊧", "􀊩"]
     },
+    "tooltip": false
+  },
 
-    "custom/disk": {
-        "format": "􀤂"
-    },
+  "custom/icon": {
+    "format": "{}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/weather.sh",
+    "restart-interval": 120,
+    "tooltip": false
+  },
 
-    "cpu": {
-        "format": "{usage}%",
-        "tooltip": false
-    },
-
-    "custom/cpu": {
-        "format": "􀫴"
-    },
-
-    "memory": {
-        "format": "{}%"
-    },
-
-    //not replacec
-    "custom/memory": {
-        "format": "􀫦"
-    },
-
-    "group/hardware": {
-        "orientation": "horizontal",
-        "modules": [
-            "disk",
-            "custom/disk",
-            "cpu",
-            "custom/cpu",
-            "memory",
-            "custom/memory"
-        ]
-    },
-
-    "custom/battery": {
-        "format": "{}",
-        "tooltip-format": "{}",
-        "escape": true,
-        "return-type": "json",
-        "exec": "~/.config/waybar/battery.sh",
-        "restart-interval": 60,
-        "tooltip": false
-    },
-
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}",
-        "format-full": "{icon}",
-        "format-charging": "􀢋",
-        "format-plugged": "􁌫",
-        "format-icons": ["􀛪", "􀛩", "􀺶", "􀺸", "􀛨"],
-        "tooltip": false
-    },
-
-    "network": {
-        "format-wifi": "􀙇",
-        "format-ethernet": "􁍊",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "􀙈",
-        // "format-alt": "{essid} - {ipaddr}/{cidr}",
-        "tooltip": false
-    },
-
-    "custom/volume": {
-        "format": "{}",
-        "tooltip-format": "{}",
-        "escape": true,
-        "return-type": "json",
-        "exec": "~/.config/waybar/volume.sh",
-        "restart-interval": 60,
-        "tooltip": false
-    },
-
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon}",
-        "format-bluetooth": "{icon}",
-        "format-bluetooth-muted": "􀊣",
-        "format-muted": "􀊣",
-        "format-icons": {
-            "headphone": "􀑈",
-            "hands-free": "",
-            "headset": "􀑈",
-            "phone": "􁟜",
-            "portable": "",
-            "car": "􁠁",
-            "default": ["􀊡", "􀊥", "􀊧", "􀊩"]
-        },
-        "tooltip": false
-    },
-
-    "custom/icon": {
-        "format": "{}",
-        "tooltip-format": "{}",
-        "escape": true,
-        "return-type": "json",
-        "exec": "~/.config/waybar/weather.sh",
-        "restart-interval": 120,
-        "tooltip": false
-    },
-
-    "custom/updates": {
-        "format": "{}",
-        "tooltip-format": "{}",
-        "escape": true,
-        "return-type": "json",
-        "exec": "~/.config/waybar/updates.sh",
-        "restart-interval": 60,
-        "on-click": "alacritty -e ~/.config/waybar/installUpdates.sh",
-        "tooltip": false
-    }
+  "custom/updates": {
+    "format": "{}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/waybar/updates.sh",
+    "restart-interval": 60,
+    "on-click": "alacritty -e ~/.config/waybar/installUpdates.sh",
+    "tooltip": false
+  }
 }
