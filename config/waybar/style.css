@@ -39,7 +39,7 @@ window#waybar.chromium {
 #custom-memory,
 #network {
   font-family: "SF Pro";
-  padding-bottom: 1px;
+  padding-bottom: 0.5px;
   font-size: 18px;
   color: #ffffff;
 }
@@ -51,7 +51,7 @@ window#waybar.chromium {
 #cpu,
 #memory,
 #clock {
-  padding-top: 1px;
+  /* padding-top: 1px; */
   font-size: 14px;
   font-weight: 500;
   font-family: "SF Pro";
@@ -59,7 +59,7 @@ window#waybar.chromium {
 }
 
 #workspaces button {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "SF Pro";
   color: rgba(255, 255, 255, 1);
