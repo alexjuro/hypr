@@ -1,97 +1,192 @@
 * {
-    transition: 0.2s;
-  }
-  
-  window {
-      font-family: "FiraCode Nerd Font Mono";
-      font-size: 13px;
-  }
-  
-  window {
-      margin: 0px;
-      border: 2px solid #cba6f7;
-      /* background-color: transparent; */
-      background-color: rgb(0, 0, 0);
-      border-radius: 16px;
-  }
-  
-  #input {
-      padding: 4px;
-      margin: 20px;
-      padding-left: 20px;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
-         outline: none;
-      border-radius: 16px;
-  }
-  
-  #input image {
-      color: #fff;
-  }
-  
-  #input:focus {
-      border: none;
-         outline: none;
-  }
-  
-  #inner-box {
-      margin: 20px;
-      margin-top: 0px;
-      border: none;
-      color: #cba6f7;
-      border-radius: 16px;
-  }
-  
-  #inner-box * {
-      transition: none;
-  }
-  
-  #outer-box {
-      margin: 0px;
-      border: none;
-      padding: 0px;
-      border-radius: 16px;
-  }
-  
-  #scroll {
-      margin-top: 5px;
-      border: none;
-      border-radius: 16px;
-      margin-bottom: 5px;
-  }
-  
-  #text:selected {
-      color: #fff;
-      font-weight: bold;
-  }
-  
-  #img {
-      margin-right: 20px;
-      background: transparent;
-  }
-  
-  #text {
-      margin: 0px;
-      border: none;
-      padding: 0px;
-      background: transparent;
-  }
-  
-  #entry {
-      margin: 0px;
-      border: none;
-      border-radius: 16px;
-      background-color: transparent;
-      min-height:32px;
-      font-weight: bold;
-  }
-  
-  #entry:selected {
-      outline: none;
-      margin: 0px;
-      border: none;
-      border-radius: 16px;
-      background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
-  }
+  transition: 0.2s;
+}
+
+window {
+  font-family: "SF Pro";
+  font-size: 13px;
+}
+
+window {
+  margin: 0px;
+  border: 0.5px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+#input {
+  padding: 4px;
+  margin: 10px;
+  padding-left: 20px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border-radius: 8px;
+}
+
+#input image {
+  color: #fff;
+}
+
+#input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#input:selected {
+  box-shadow: none;
+}
+
+#inner-box {
+  margin: 20px;
+  margin-top: 0px;
+  border: none;
+  color: transparent;
+  border-radius: 8px;
+}
+
+#inner-box * {
+  transition: none;
+}
+
+#outer-box {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+#scroll {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+#text:selected {
+  color: #fff;
+  font-weight: bold;
+}
+
+#img {
+  margin-right: 20px;
+  background: transparent;
+}
+
+#text {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background: transparent;
+}
+
+#entry {
+  margin: 0px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  min-height: 32px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#entry:selected {
+  outline: none;
+  margin: 0px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* window {
+  margin: 0px;
+  border: 2px solid #cba6f7;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+}
+
+#input {
+  padding: 4px;
+  margin: 20px;
+  padding-left: 20px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
+  outline: none;
+  border-radius: 16px;
+}
+
+#input image {
+  color: #fff;
+}
+
+#input:focus {
+  border: none;
+  outline: none;
+}
+
+#inner-box {
+  margin: 20px;
+  margin-top: 0px;
+  border: none;
+  color: #cba6f7;
+  border-radius: 16px;
+}
+
+#inner-box * {
+  transition: none;
+}
+
+#outer-box {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  border-radius: 16px;
+}
+
+#scroll {
+  margin-top: 5px;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 5px;
+}
+
+#text:selected {
+  color: #fff;
+  font-weight: bold;
+}
+
+#img {
+  margin-right: 20px;
+  background: transparent;
+}
+
+#text {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background: transparent;
+}
+
+#entry {
+  margin: 0px;
+  border: none;
+  border-radius: 16px;
+  background-color: transparent;
+  min-height: 32px;
+  font-weight: bold;
+}
+
+#entry:selected {
+  outline: none;
+  margin: 0px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #cba6f7 0%, #94e2d5 100%);
+} */

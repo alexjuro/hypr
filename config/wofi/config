@@ -1,9 +1,9 @@
-width=420
-height=550
+width=700
+height=400
 location=center
 show=drun
 matching=fuzzy
-prompt=Search...
+prompt= Suchen ...
 filter_rate=100
 allow_markup=true
 no_actions=true
